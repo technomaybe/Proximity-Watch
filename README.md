@@ -24,3 +24,7 @@ Open `ProximityWatch.xcodeproj` in Xcode and press Command-R. Allow Bluetooth wh
 
 - **Lock threshold:** the signal level, in dB, that counts as walked away. The default is -75. Move it toward -65 to lock sooner, or toward -85 to lock later.
 - **Delay:** how many seconds the watch has to stay away before the Mac locks. The default is 10.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
