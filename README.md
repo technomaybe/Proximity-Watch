@@ -2,7 +2,18 @@
 
 A macOS menu bar app that locks your Mac when your Apple Watch walks away.
 
+<img src="docs/menu.png" alt="The Proximity Watch menu open in the macOS menu bar" width="320">
+
 It only arms after it has seen your watch nearby while you were using the Mac. If you sit down without your watch, it never arms, so it can't lock you out. After it locks, unlock the usual way (password, Touch ID, or Apple Watch Auto Unlock) and it re-arms once you're back at the keyboard with your watch.
+
+## Download
+
+1. Download `ProximityWatch-1.0.zip` from the [latest release](https://github.com/technomaybe/Proximity-Watch/releases/latest), unzip it, and drag ProximityWatch.app into `/Applications`.
+2. Proximity Watch isn't notarized, so macOS blocks the first launch. Try opening it once, then go to System Settings → Privacy & Security and click **Open Anyway**.
+3. Allow Bluetooth when macOS asks.
+4. Click the watch icon in the menu bar, choose **Choose your watch…**, hold the watch against the Mac, and pick the strongest signal.
+
+Runs on Apple silicon and Intel Macs.
 
 ## How it works
 
@@ -13,7 +24,7 @@ See [learning/corebluetooth-rssi-and-menu-bar-apps.md](learning/corebluetooth-rs
 ## Requirements
 
 - macOS 14 or later
-- Xcode 16 or later
+- Xcode 16 or later, only to build from source
 - An Apple Watch signed in to the same Apple ID as the Mac
 
 ## Build and run
